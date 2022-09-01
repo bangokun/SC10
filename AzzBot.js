@@ -2919,7 +2919,7 @@ anu = `
 -NamaBot: *Azhil-Botz*
 
 *Hay Saya Adalah Azhil Botz Saya Adalah Asisten Anda
-Masa Kini😇*
+Masa Kini😇*`
 var button = [{ buttonId: `allmenu`, buttonText: { displayText: `Allmenu` }, type: 1 }, { buttonId: `owner`, buttonText: { displayText: `Owner` }, type: 1 }]
 zets.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(buffer, 200, 200) }, buttons: button, footer:  botname, mentions: [m.sender] })
 }
