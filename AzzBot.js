@@ -1292,7 +1292,7 @@ await sleep(1500)
 let btn = [{
 urlButton: {
 displayText: 'Source Code',
-url: 'https://github.com/DikaArdnt/zets-Morou'
+url: '404'
 }
 }]
   let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1311,7 +1311,7 @@ m.reply(`Mengirim Broadcast Ke ${anu.length} Chat\nWaktu Selesai ${anu.length * 
 		let btn = [{
 urlButton: {
 displayText: 'Source Code',
-url: 'https://github.com/DikaArdnt/zets-Morou'
+url: '404'
 }
 }]
   let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -2923,6 +2923,10 @@ Masa Kini😇*`
 var button = [{ buttonId: `allmenu`, buttonText: { displayText: `Allmenu` }, type: 1 }, { buttonId: `owner`, buttonText: { displayText: `Owner` }, type: 1 }]
 zets.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(buffer, 200, 200) }, buttons: button, footer:  botname, mentions: [m.sender] })
 }
+break
+case 'Asslammualaikum' : {
+addCountCmd(`#${command.slice(1)}`, sender, _cmd)
+m.reply('Waalaikumsalam😇')
 break
 //────────────────────[ BATAS TEMAN ]────────────────────
 default:
