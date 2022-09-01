@@ -656,7 +656,6 @@ zets.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/a0733abab460f1
 }
 break
 case 'sc':  case 'sourcecode': {
-addCountCmd(`#${command.slice(1)}`, sender, _cmd)
 	anu = `
 ⌕ Script : Script Ini Masih Private,Dikarnakan
 masih banyak bug/error
