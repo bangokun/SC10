@@ -2924,10 +2924,6 @@ var button = [{ buttonId: `allmenu`, buttonText: { displayText: `Allmenu` }, typ
 zets.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(buffer, 200, 200) }, buttons: button, footer:  botname, mentions: [m.sender] })
 }
 break
-case 'Asslammualaikum' : {
-addCountCmd(`#${command.slice(1)}`, sender, _cmd)
-m.reply('Waalaikumsalam😇')
-break
 //────────────────────[ BATAS TEMAN ]────────────────────
 default:
 if (budy.startsWith('=>')) {
