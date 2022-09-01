@@ -29,9 +29,9 @@ let _cmdUser = JSON.parse(fs.readFileSync('./database/commandUser.json'));
 let setting = JSON.parse(fs.readFileSync('./apikey.json'))
 
 //limit
-limitawal = '10'
-botname = 'AzzBot•MD'
-wm = '© AzzBot - MD'
+limitawal = '20'
+botname = 'Azhil-Botz'
+wm = 'Zhill'
 
 // read database
 let tebaklagu = db.data.game.tebaklagu = []
@@ -654,25 +654,6 @@ break
 	case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
 zets.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/a0733abab460f14ffe835.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⌕ 15k Per Group via E-Walet 1 Month\n⌕ 20k via pulsa 1 Month\n\n Premium Price Bot\n⌕ 10k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6285817964582 (Owner)
 }
-break
-case 'sc':  case 'sourcecode': {
-m.reply('⌕ Script : Script Ini Masih Private')
-break
-
-case 'tqto': case 'partner': case 'credits': {
-	anu = `Terima kasih
-
-⌕ZakkyGans
--https://github.com/zaki1726
-`
-	let btn = [{
-urlButton: {
-displayText: 'Instagram',
-url: 'https://instagram.com/zkyze_1'
-}
-}]
-zets.send5ButImg(m.chat, anu, botname, global.tq, btn)
- }
 break
 
 case 'chat': {
