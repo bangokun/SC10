@@ -656,18 +656,7 @@ zets.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/a0733abab460f1
 }
 break
 case 'sc':  case 'sourcecode': {
-	anu = `
-⌕ Script : Script Ini Masih Private,Dikarnakan
-masih banyak bug/error
-`
-	let btn = [{
-urlButton: {
-displayText: 'Instagram',
-url: 'https://instagram.com/zkyze_1'
-}
-}]
-zets.send5ButImg(m.chat, anu, botname, global.sc, btn)
- }
+m.reply('⌕ Script : Script Ini Masih Private')
 break
 
 case 'tqto': case 'partner': case 'credits': {
