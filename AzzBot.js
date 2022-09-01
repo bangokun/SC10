@@ -652,25 +652,19 @@ delete this.suit[id]
 }
 break
 	case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-zets.sendMessage(m.chat, { image: { url: 'https://i.postimg.cc/7ZWmBrMB/IMG-20220819-WA0027.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⌕ 15k Per Group via E-Walet 1 Month\n⌕ 20k via pulsa 1 Month\n\n Premium Price Bot\n⌕ 10k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6281252848955 (Owner)\n\nDonate For Me : \n\n⌕ Paypal : https://www.paypal.me/Rifando35\n⌕ Saweria : https://saweria.co/Nando35` }, { quoted: m })
+zets.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/a0733abab460f14ffe835.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⌕ 15k Per Group via E-Walet 1 Month\n⌕ 20k via pulsa 1 Month\n\n Premium Price Bot\n⌕ 10k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6285817964582 (Owner)
 }
 break
 case 'sc':  case 'sourcecode': {
 addCountCmd(`#${command.slice(1)}`, sender, _cmd)
 	anu = `
-⌕ Script : https://github.com/AzzBott679
-
-Jangan lupa kasih bintang.
-⌕ Donate : 081511480762 (Dana / gopay)
-⌕ Saweria : Kaga ada
-⌕ Paypal : kaga ada
-
-Dont Forget Donate
+⌕ Script : Script Ini Masih Private,Dikarnakan
+masih banyak bug/error
 `
 	let btn = [{
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/naando.jpeg'
+url: 'https://instagram.com/zkyze_1'
 }
 }]
 zets.send5ButImg(m.chat, anu, botname, global.sc, btn)
@@ -680,15 +674,13 @@ break
 case 'tqto': case 'partner': case 'credits': {
 	anu = `Terima kasih
 
-Yahya Ganzz
-⌕ https://github.com/AzzBott679
-⌕ https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g
-
+⌕ZakkyGans
+-https://github.com/zaki1726
 `
 	let btn = [{
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com'
+url: 'https://instagram.com/zkyze_1'
 }
 }]
 zets.send5ButImg(m.chat, anu, botname, global.tq, btn)
@@ -1295,7 +1287,7 @@ await sleep(1500)
 let btn = [{
 urlButton: {
 displayText: 'Source Code',
-url: 'https://github.com/DikaArdnt/zets-Morou'
+url: 'https://PrivateHayukk'
 }
 }]
   let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1314,7 +1306,7 @@ m.reply(`Mengirim Broadcast Ke ${anu.length} Chat\nWaktu Selesai ${anu.length * 
 		let btn = [{
 urlButton: {
 displayText: 'Source Code',
-url: 'https://github.com/DikaArdnt/zets-Morou'
+url: 'https://PrivateHayukkk'
 }
 }]
   let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -2669,7 +2661,7 @@ break
 
 case 'menu': case 'help': case '?': {
 addCountCmd(`#${command.slice(1)}`, sender, _cmd)
-buffer = `https://i.postimg.cc/PxTQPVrz/null-20220821-WA0032.jpg`
+buffer = `https://telegra.ph/file/a0733abab460f14ffe835.jpg`
 anu = `Hai kak ${pushname}, have a nice day:)
    
 ♕︎ *INFO - BOT*
