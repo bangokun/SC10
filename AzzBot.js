@@ -2664,353 +2664,268 @@ break
 
 //────────────────────[ MAIN MENU HOOOOOOHHH ]────────────────────
 
-case 'menu': case 'help': case '?': {
+case 'allmenu': {
 addCountCmd(`#${command.slice(1)}`, sender, _cmd)
 buffer = `https://telegra.ph/file/a0733abab460f14ffe835.jpg`
-anu = `Hai kak ${pushname}, have a nice day:)
+anu = `Hai kak ${pushname}, PerkenalKan Syaa Adalah Bot
+_${global.botname}_
    
-♕︎ *INFO - BOT*
-✔︎ *Bot Name:* _${global.botname}_
-✔︎ *Owner Name:* _${global.ownername}_
-✔︎ *Runtime:* _${runtime(process.uptime())}_
-✔︎ *Gc Bot:* _${global.gc}_
-✔︎ *Tanggal:* _${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
-✔︎ *Waktu:* _${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_ 
-✔︎ *Library:* _Baileys-Md_
+︎*⌜INFO - BOT⌟*
+❏ *Bot Name:* _${global.botname}_
+❏ *Owner Name:* _${global.ownername}_
+❏ *Runtime:* _${runtime(process.uptime())}_
+❏ *Gc Bot:* _${global.gc}_
+❏ *Tanggal:* _${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
+❏ *Waktu:* _${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_ 
+❏ *Library:* _Baileys-Md_
 
 ♕︎ *Group*
-   ⚠︎ ${prefix}linkgroup
-   ⚠︎ ${prefix}ephemeral [option]
-   ⚠︎ ${prefix}setppgc [image]
-   ⚠︎ ${prefix}setname [text]
-   ⚠︎ ${prefix}setdesc [text]
-   ⚠︎ ${prefix}group [option]
-   ⚠︎ ${prefix}editinfo [option]
-   ⚠︎ ${prefix}add @user
-   ⚠︎ ${prefix}kick @user
-   ⚠︎ ${prefix}hidetag [text]
-   ⚠︎ ${prefix}tagall [text]
-   ⚠︎ ${prefix}antilink [on/off]
-   ⚠︎ ${prefix}mute [on/off]
-   ⚠︎ ${prefix}promote @user
-   ⚠︎ ${prefix}demote @user
-   ⚠︎ ${prefix}vote [text]
-   ⚠︎ ${prefix}devote
-   ⚠︎ ${prefix}upvote
-   ⚠︎ ${prefix}cekvote
-   ⚠︎ ${prefix}hapusvote
+   > ${prefix}linkgroup
+   > ${prefix}ephemeral [option]
+   > ${prefix}setppgc [image]
+   > ${prefix}setname [text]
+   > ${prefix}setdesc [text]
+   > ${prefix}group [option]
+   > ${prefix}editinfo [option]
+   > ${prefix}add @user
+   > ${prefix}kick @user
+   > ${prefix}hidetag [text]
+   > ${prefix}tagall [text]
+   > ${prefix}antilink [on/off]
+   > ${prefix}mute [on/off]
+   > ${prefix}promote @user
+   > ${prefix}demote @user
+   > ${prefix}vote [text]
+   > ${prefix}devote
+   > ${prefix}upvote
+   > ${prefix}cekvote
+   > ${prefix}hapusvote
 
 ♕︎ *Downloader*
-   ⚠︎ ${prefix}tiktoknowm [url]
-   ⚠︎ ${prefix}tiktokwm [url]
-   ⚠︎ ${prefix}tiktokmp3 [url]
-   ⚠︎ ${prefix}instagram [url]
-   ⚠︎ ${prefix}twitter [url]
-   ⚠︎ ${prefix}twittermp3 [url]
-   ⚠︎ ${prefix}facebook [url]
-   ⚠︎ ${prefix}pinterestdl [url]
-   ⚠︎ ${prefix}ytmp3 [url]
-   ⚠︎ ${prefix}ytmp4 [url]
-   ⚠︎ ${prefix}getmusic [query]
-   ⚠︎ ${prefix}getvideo [query]
-   ⚠︎ ${prefix}umma [url]
-   ⚠︎ ${prefix}joox [query]
-   ⚠︎ ${prefix}soundcloud [url]
+   > ${prefix}tiktoknowm [url]
+   > ${prefix}tiktokwm [url]
+   > ${prefix}tiktokmp3 [url]
+   > ${prefix}instagram [url]
+   > ${prefix}twitter [url]
+   > ${prefix}twittermp3 [url]
+   > ${prefix}facebook [url]
+   > ${prefix}pinterestdl [url]
+   > ${prefix}ytmp3 [url]
+   > ${prefix}ytmp4 [url]
+   > ${prefix}getmusic [query]
+   > ${prefix}getvideo [query]
+   > ${prefix}umma [url]
+   > ${prefix}joox [query]
+   > ${prefix}soundcloud [url]
 
 ♕︎ *Searching*
-   ⚠︎ ${prefix}play [query]
-   ⚠︎ ${prefix}yts [query]
-   ⚠︎ ${prefix}google [query]
-   ⚠︎ ${prefix}gimage [query]
-   ⚠︎ ${prefix}pinterest [query]
-   ⚠︎ ${prefix}wallpaper [query]
-   ⚠︎ ${prefix}wikimedia [query]
-   ⚠︎ ${prefix}ytsearch [query]
-   ⚠︎ ${prefix}ringtone [query]
-   ⚠︎ ${prefix}stalk [option] [query]
+   > ${prefix}play [query]
+   > ${prefix}yts [query]
+   > ${prefix}google [query]
+   > ${prefix}gimage [query]
+   > ${prefix}pinterest [query]
+   > ${prefix}wallpaper [query]
+   > ${prefix}wikimedia [query]
+   > ${prefix}ytsearch [query]
+   > ${prefix}ringtone [query]
+   > ${prefix}stalk [option] [query]
 
 ♕︎ *Random*
-   ⚠︎ ${prefix}coffe
-   ⚠︎ ${prefix}quotesanime
-   ⚠︎ ${prefix}motivasi
-   ⚠︎ ${prefix}dilanquote
-   ⚠︎ ${prefix}bucinquote
-   ⚠︎ ${prefix}katasenja
-   ⚠︎ ${prefix}puisi
-   ⚠︎ ${prefix}couple
-   ⚠︎ ${prefix}anime
-   ⚠︎ ${prefix}waifu
-   ⚠︎ ${prefix}husbu
-   ⚠︎ ${prefix}neko
-   ⚠︎ ${prefix}shinobu
-   ⚠︎ ${prefix}waifus (nsfw)
-   ⚠︎ ${prefix}nekos (nsfw)
-   ⚠︎ ${prefix}trap (nsfw)
-   ⚠︎ ${prefix}blowjob (nsfw)
+   > ${prefix}coffe
+   > ${prefix}quotesanime
+   > ${prefix}motivasi
+   > ${prefix}dilanquote
+   > ${prefix}bucinquote
+   > ${prefix}katasenja
+   > ${prefix}puisi
+   > ${prefix}couple
+   > ${prefix}anime
+   > ${prefix}waifu
+   > ${prefix}husbu
+   > ${prefix}neko
+   > ${prefix}shinobu
+   > ${prefix}waifus (nsfw)
+   > ${prefix}nekos (nsfw)
+   > ${prefix}trap (nsfw)
+   > ${prefix}blowjob (nsfw)
 
 ♕︎ *Textpro*
-   ⚠︎ ${prefix}3dchristma
-   ⚠︎ ${prefix}3ddeepsea
-   ⚠︎ ${prefix}americanflag
-   ⚠︎ ${prefix}3dscifi
-   ⚠︎ ${prefix}3drainbow
-   ⚠︎ ${prefix}3dwaterpipe
-   ⚠︎ ${prefix}halloweenskeleton
-   ⚠︎ ${prefix}sketch
-   ⚠︎ ${prefix}bluecircuit
-   ⚠︎ ${prefix}space
-   ⚠︎ ${prefix}metallic
-   ⚠︎ ${prefix}fiction
-   ⚠︎ ${prefix}greenhorror
-   ⚠︎ ${prefix}transformer
-   ⚠︎ ${prefix}berry
-   ⚠︎ ${prefix}thunder
-   ⚠︎ ${prefix}magma
-   ⚠︎ ${prefix}3dcrackedstone
-   ⚠︎ ${prefix}3dneonlight
-   ⚠︎ ${prefix}impressiveglitch
-   ⚠︎ ${prefix}naturalleaves
-   ⚠︎ ${prefix}fireworksparkle
-   ⚠︎ ${prefix}matrix
-   ⚠︎ ${prefix}dropwater
-   ⚠︎ ${prefix}harrypotter
-   ⚠︎ ${prefix}foggywindow
-   ⚠︎ ${prefix}neondevils
-   ⚠︎ ${prefix}christmasholiday
-   ⚠︎ ${prefix}3dgradient
-   ⚠︎ ${prefix}blackpink
-   ⚠︎ ${prefix}gluetext
+   > ${prefix}3dchristma
+   > ${prefix}3ddeepsea
+   > ${prefix}americanflag
+   > ${prefix}3dscifi
+   > ${prefix}3drainbow
+   > ${prefix}3dwaterpipe
+   > ${prefix}halloweenskeleton
+   > ${prefix}sketch
+   > ${prefix}bluecircuit
+   > ${prefix}space
+   > ${prefix}metallic
+   > ${prefix}fiction
+   > ${prefix}greenhorror
+   > ${prefix}transformer
+   > ${prefix}berry
+   > ${prefix}thunder
+   > ${prefix}magma
+   > ${prefix}3dcrackedstone
+   > ${prefix}3dneonlight
+   > ${prefix}impressiveglitch
+   > ${prefix}naturalleaves
+   > ${prefix}fireworksparkle
+   > ${prefix}matrix
+   > ${prefix}dropwater
+   > ${prefix}harrypotter
+   > ${prefix}foggywindow
+   > ${prefix}neondevils
+   > ${prefix}christmasholiday
+   > ${prefix}3dgradient
+   > ${prefix}blackpink
+   > ${prefix}gluetext
 
 ♕︎ *Fun*
-   ⚠︎ ${prefix}halah
-   ⚠︎ ${prefix}hilih
-   ⚠︎ ${prefix}huluh
-   ⚠︎ ${prefix}heleh
-   ⚠︎ ${prefix}holoh
-   ⚠︎ ${prefix}jadian
-   ⚠︎ ${prefix}jodohku
-   ⚠︎ ${prefix}delttt
-   ⚠︎ ${prefix}tictactoe
-   ⚠︎ ${prefix}family100
-   ⚠︎ ${prefix}tebak [option]
-   ⚠︎ ${prefix}math [mode]
-   ⚠︎ ${prefix}suitpvp [@tag]
+   > ${prefix}halah
+   > ${prefix}hilih
+   > ${prefix}huluh
+   > ${prefix}heleh
+   > ${prefix}holoh
+   > ${prefix}jadian
+   > ${prefix}jodohku
+   > ${prefix}delttt
+   > ${prefix}tictactoe
+   > ${prefix}family100
+   > ${prefix}tebak [option]
+   > ${prefix}math [mode]
+   > ${prefix}suitpvp [@tag]
 
 ♕︎ *Primbon*
-   ⚠︎ ${prefix}nomorhoki
-   ⚠︎ ${prefix}artimimpi
-   ⚠︎ ${prefix}artinama
-   ⚠︎ ${prefix}ramaljodoh
-   ⚠︎ ${prefix}ramaljodohbali
-   ⚠︎ ${prefix}suamiistri
-   ⚠︎ ${prefix}ramalcinta
-   ⚠︎ ${prefix}cocoknama
-   ⚠︎ ${prefix}pasangan
-   ⚠︎ ${prefix}jadiannikah
-   ⚠︎ ${prefix}sifatusaha
-   ⚠︎ ${prefix}rezeki
-   ⚠︎ ${prefix}pekerjaan
-   ⚠︎ ${prefix}nasib
-   ⚠︎ ${prefix}penyakit
-   ⚠︎ ${prefix}tarot
-   ⚠︎ ${prefix}fengshui
-   ⚠︎ ${prefix}haribaik
-   ⚠︎ ${prefix}harisangar
-   ⚠︎ ${prefix}harisial
-   ⚠︎ ${prefix}nagahari
-   ⚠︎ ${prefix}arahrezeki
-   ⚠︎ ${prefix}peruntungan
-   ⚠︎ ${prefix}weton
-   ⚠︎ ${prefix}karakter
-   ⚠︎ ${prefix}keberuntungan
-   ⚠︎ ${prefix}memancing
-   ⚠︎ ${prefix}masasubur
-   ⚠︎ ${prefix}zodiak
-   ⚠︎ ${prefix}shio
+   > ${prefix}nomorhoki
+   > ${prefix}artimimpi
+   > ${prefix}artinama
+   > ${prefix}ramaljodoh
+   > ${prefix}ramaljodohbali
+   > ${prefix}suamiistri
+   > ${prefix}ramalcinta
+   > ${prefix}cocoknama
+   > ${prefix}pasangan
+   > ${prefix}jadiannikah
+   > ${prefix}sifatusaha
+   > ${prefix}rezeki
+   > ${prefix}pekerjaan
+   > ${prefix}nasib
+   > ${prefix}penyakit
+   > ${prefix}tarot
+   > ${prefix}fengshui
+   > ${prefix}haribaik
+   > ${prefix}harisangar
+   > ${prefix}harisial
+   > ${prefix}nagahari
+   > ${prefix}arahrezeki
+   > ${prefix}peruntungan
+   > ${prefix}weton
+   > ${prefix}karakter
+   > ${prefix}keberuntungan
+   > ${prefix}memancing
+   > ${prefix}masasubur
+   > ${prefix}zodiak
+   > ${prefix}shio
 
 ♕︎ *Convert*
-   ⚠︎ ${prefix}toimage
-   ⚠︎ ${prefix}removebg
-   ⚠︎ ${prefix}sticker
-   ⚠︎ ${prefix}emojimix
-   ⚠︎ ${prefix}tovideo
-   ⚠︎ ${prefix}togif
-   ⚠︎ ${prefix}tourl
-   ⚠︎ ${prefix}tovn
-   ⚠︎ ${prefix}tomp3
-   ⚠︎ ${prefix}toaudio
-   ⚠︎ ${prefix}ebinary
-   ⚠︎ ${prefix}dbinary
-   ⚠︎ ${prefix}styletext
+   > ${prefix}toimage
+   > ${prefix}removebg
+   > ${prefix}sticker
+   > ${prefix}emojimix
+   > ${prefix}tovideo
+   > ${prefix}togif
+   > ${prefix}tourl
+   > ${prefix}tovn
+   > ${prefix}tomp3
+   > ${prefix}toaudio
+   > ${prefix}ebinary
+   > ${prefix}dbinary
+   > ${prefix}styletext
 
 ♕︎ *Main*
-   ⚠︎ ${prefix}ping
-   ⚠︎ ${prefix}owner
-   ⚠︎ ${prefix}menu / ${prefix}help / ${prefix}?
-   ⚠︎ ${prefix}delete
-   ⚠︎ ${prefix}infochat
-   ⚠︎ ${prefix}quoted
-   ⚠︎ ${prefix}listpc
-   ⚠︎ ${prefix}listgc
-   ⚠︎ ${prefix}listonline
-   ⚠︎ ${prefix}speedtest
+   > ${prefix}ping
+   > ${prefix}owner
+   > ${prefix}menu / ${prefix}help / ${prefix}?
+   > ${prefix}delete
+   > ${prefix}infochat
+   > ${prefix}quoted
+   > ${prefix}listpc
+   > ${prefix}listgc
+   > ${prefix}listonline
+   > ${prefix}speedtest
 
 ♕︎ *Database*
-   ⚠︎ ${prefix}setcmd
-   ⚠︎ ${prefix}listcmd
-   ⚠︎ ${prefix}delcmd
-   ⚠︎ ${prefix}lockcmd
-   ⚠︎ ${prefix}addmsg
-   ⚠︎ ${prefix}listmsg
-   ⚠︎ ${prefix}getmsg
-   ⚠︎ ${prefix}delmsg
+   > ${prefix}setcmd
+   > ${prefix}listcmd
+   > ${prefix}delcmd
+   > ${prefix}lockcmd
+   > ${prefix}addmsg
+   > ${prefix}listmsg
+   > ${prefix}getmsg
+   > ${prefix}delmsg
 
 ♕︎ *Anonymous Chat*
-   ⚠︎ ${prefix}anonymous
-   ⚠︎ ${prefix}start
-   ⚠︎ ${prefix}next
-   ⚠︎ ${prefix}keluar
-   ⚠︎ ${prefix}sendkontak
+   > ${prefix}anonymous
+   > ${prefix}start
+   > ${prefix}next
+   > ${prefix}keluar
+   > ${prefix}sendkontak
 
 ♕︎ *Islam*
-   ⚠︎ ${prefix}iqra
-   ⚠︎ ${prefix}hadist
-   ⚠︎ ${prefix}alquran
-   ⚠︎ ${prefix}juzamma
-   ⚠︎ ${prefix}tafsirsurah
+   > ${prefix}iqra
+   > ${prefix}hadist
+   > ${prefix}alquran
+   > ${prefix}juzamma
+   > ${prefix}tafsirsurah
 
 ♕︎ *Voice Changer*
-   ⚠︎ ${prefix}bass
-   ⚠︎ ${prefix}blown
-   ⚠︎ ${prefix}deep
-   ⚠︎ ${prefix}earrape
-   ⚠︎ ${prefix}fast
-   ⚠︎ ${prefix}fat
-   ⚠︎ ${prefix}nightcore
-   ⚠︎ ${prefix}reverse
-   ⚠︎ ${prefix}robot
-   ⚠︎ ${prefix}slow
-   ⚠︎ ${prefix}tupai
+   > ${prefix}bass
+   > ${prefix}blown
+   > ${prefix}deep
+   > ${prefix}earrape
+   > ${prefix}fast
+   > ${prefix}fat
+   > ${prefix}nightcore
+   > ${prefix}reverse
+   > ${prefix}robot
+   > ${prefix}slow
+   > ${prefix}tupai
 
 ♕︎ *Owner*
-   ⚠︎ ${prefix}react [emoji]
-   ⚠︎ ${prefix}chat [option]
-   ⚠︎ ${prefix}join [link]
-   ⚠︎ ${prefix}leave
-   ⚠︎ ${prefix}block @user
-   ⚠︎ ${prefix}unblock @user
-   ⚠︎ ${prefix}bcgroup [text]
-   ⚠︎ ${prefix}bcall [text]
-   ⚠︎ ${prefix}setppbot [image]
-   ⚠︎ ${prefix}setexif
+   > ${prefix}react [emoji]
+   > ${prefix}chat [option]
+   > ${prefix}join [link]
+   > ${prefix}leave
+   > ${prefix}block @user
+   > ${prefix}unblock @user
+   > ${prefix}bcgroup [text]
+   > ${prefix}bcall [text]
+   > ${prefix}setppbot [image]
+   > ${prefix}setexif
 `
 var button = [{ buttonId: `dashboard`, buttonText: { displayText: `Dashboard` }, type: 1 }, { buttonId: `owner`, buttonText: { displayText: `Owner` }, type: 1 }]
 zets.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(buffer, 200, 200) }, buttons: button, footer:  botname, mentions: [m.sender] })
 }
 break
 
+case 'menu': case'help': case'?': {
+addCountCmd(`#${command.slice(1)}`, sender, _cmd)
+buffer = `https://telegra.ph/file/a0733abab460f14ffe835.jpg`
+anu = `
+⌜INFO BOT⌟
+-Owner: *ZakkyGans*
+-NamaBot: *Azhil-Botz*
+
+*Hay Saya Adalah Azhil Botz Saya Adalah Asisten Anda
+Masa Kini😇*
+var button = [{ buttonId: `allmenu`, buttonText: { displayText: `Allmenu` }, type: 1 }, { buttonId: `owner`, buttonText: { displayText: `Owner` }, type: 1 }]
+zets.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(buffer, 200, 200) }, buttons: button, footer:  botname, mentions: [m.sender] })
+}
+break
 //────────────────────[ BATAS TEMAN ]────────────────────
 default:
-}
-
-
-		if (budy.includes(`bot`)) {
-
-                  freply(`Iya gw Bot, Gak seneng lu?`)
-
-                  }
-
-
-
-		if (budy.includes(`bot`)) {
-
-                  freply(`Iya gw Bot, Gak seneng lu?`)
-
-                  }
-
-
-		if (budy.includes(`Assalamualaikum`)) {
-
-                  freply(`Waalaikumsalam ${pushname}`)
-
-                  }
-
-
-		if (budy.includes(`P`)) {
-
-                  freply(`Pa pe pa pe, Salam gblk`)
-
-                  }
-
-
-		if (budy.includes(`Kontol`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`Ngentod`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`Kntl`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`Memek`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`memek`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`jembut`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`kontol`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`anj`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`Anjg`)) {
-
-                  freply(`_Jangan Toxic anj_`)
-
-                  }
-
-
-		if (budy.includes(`Bacot`)) {
-
-                  freply(`Napa lu?`)
-
-                  }
 if (budy.startsWith('=>')) {
 if (!isCreator) return m.reply(mess.owner)
 function Return(sul) {
